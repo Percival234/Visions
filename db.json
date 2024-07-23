@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Realism",
+      "description": "Focuses on depicting subjects as they appear in everyday life, without embellishment or interpretation."
+    },
+    {
+      "id": "2",
+      "name": "Impressionism",
+      "description": "Captures the impression of a moment, especially in terms of light and color. Often characterized by visible brush strokes."
+    },
+    {
+      "id": "3",
+      "name": "Cubism",
+      "description": "Breaks objects into geometric shapes and presents multiple perspectives simultaneously. Often abstract."
+    },
+    {
+      "id": "4",
+      "name": "Post-Impressionism",
+      "description": "Builds on Impressionism but emphasizes more on geometric forms, distortion for expressive effect, and the use of unnatural or arbitrary color."
+    },
+    {
+      "id": "5",
+      "name": "Expressionism",
+      "description": "Focuses on representing emotional experiences rather than physical reality. Often uses bold colors and exaggerated forms."
+    },
+    {
+      "id": "6",
+      "name": "Surrealism",
+      "description": "Features dream-like scenes and illogical, fantastical images. Emphasizes the subconscious mind."
+    },
+    {
+      "id": "7",
+      "name": "Abstract Expressionism",
+      "description": "Focuses on expressing emotions through abstract forms, often with a sense of spontaneity and personal expression."
+    },
+    {
+      "id": "8",
+      "name": "Pop Art",
+      "description": "Incorporates imagery from popular and mass culture, such as advertising, comic books, and everyday objects. Often uses bright colors and bold graphics."
+    },
+    {
+      "id": "9",
+      "name": "Fauvism",
+      "description": "Characterized by bold, often distorted forms and vibrant colors. Focuses on painterly qualities and strong color over representational or realistic values."
+    },
+    {
+      "id": "10",
+      "name": "Art Nouveau",
+      "description": "Emphasizes ornamental style with flowing, sinuous lines and often incorporates floral and other natural forms."
+    },
+    {
+      "id": "11",
+      "name": "Baroque",
+      "description": "Known for its grandeur, drama, movement, and tension. Often features intense contrasts of light and dark."
+    },
+    {
+      "id": "12",
+      "name": "Rococo",
+      "description": "Light, ornate, and decorative style that often depicts themes of love, nature, and playful subjects."
+    },
+    {
+      "id": "13",
+      "name": "Neoclassicism",
+      "description": "Draws inspiration from the \"classical\" art and culture of Ancient Greece and Rome. Emphasizes simplicity and symmetry."
+    },
+    {
+      "id": "14",
+      "name": "Romanticism",
+      "description": "Emphasizes emotion, individualism, and the glorification of the past and nature. Often dramatic and intense."
+    },
+    {
+      "id": "15",
+      "name": "Symbolism",
+      "description": "Uses symbolic images and indirect suggestion to express mystical ideas, emotions, and states of mind."
+    },
+    {
+      "id": "16",
+      "name": "Photorealism",
+      "description": "Focuses on creating paintings that are extremely realistic, often resembling high-resolution photographs."
+    },
+    {
+      "id": "17",
+      "name": "Minimalism",
+      "description": "Characterized by simplicity and the use of a minimal number of elements. Focuses on the essentials."
+    },
+    {
+      "id": "18",
+      "name": "Op Art",
+      "description": "Uses optical illusions to create a sense of movement or warping in the viewer's perception."
+    },
+    {
+      "id": "19",
+      "name": "Art Deco",
+      "description": "Combines modernist styles with fine craftsmanship and rich materials. Often characterized by bold geometric shapes."
+    },
+    {
+      "id": "20",
+      "name": "Dadaism",
+      "description": "An avant-garde movement that emphasizes absurdity and the irrational. Often uses found objects and nonsense."
+    },
+    {
+      "id": "21",
+      "name": "Constructivism",
+      "description": "An artistic and architectural philosophy that originated in Russia, characterized by abstract and austere compositions."
+    },
+    {
+      "id": "22",
+      "name": "Futurism",
+      "description": "Emphasizes speed, technology, and modernity. Often features dynamic movement and the energy of the modern world."
+    },
+    {
+      "id": "23",
+      "name": "Neo-Expressionism",
+      "description": "Revives the expressiveness of early 20th-century Expressionism, often with a raw, emotional quality."
+    },
+    {
+      "id": "24",
+      "name": "Luminism",
+      "description": "An American landscape painting style characterized by effects of light in landscapes, through the use of aerial perspective and the concealment of visible brushstrokes."
+    },
+    {
+      "id": "25",
+      "name": "Primitivism",
+      "description": "Borrowing visual forms from non-Western or prehistoric peoples, often characterized by a simple, unsophisticated style."
+    }
+  ]
+  
+}

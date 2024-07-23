@@ -63,7 +63,14 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply font-medium sm:text-lg;
+  }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+::selection {
+  @apply bg-foreground text-background;
 }
