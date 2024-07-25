@@ -1,37 +1,36 @@
 import {
   Bell,
-  ChartColumn,
-  ImagePlus,
-  Images,
-  LifeBuoy,
-  LogOut,
-  Package,
-  Settings,
   User,
+  Users,
+  LogOut,
+  Images,
+  Package,
   UserCog,
   UserPen,
-  Users,
+  LifeBuoy,
+  Settings,
+  ImagePlus,
+  ChartColumn,
   MessageSquareWarning,
-  LucideIcon,
 } from 'lucide-react';
 
+import { DropdownMenuLink } from '../ui/dropdown-link';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import {
   DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
+  DropdownMenuSub,
   DropdownMenuItem,
   DropdownMenuLabel,
+  DropdownMenuGroup,
   DropdownMenuPortal,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
   DropdownMenuSeparator,
-  DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import Link, { LinkProps } from 'next/link';
+
 import { ROUTES } from '@/constants/pages-url';
-import { cn } from '@/lib/utils';
 
 export const UserDropdownMenu = () => {
   return (
@@ -111,27 +110,5 @@ export const UserDropdownMenu = () => {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
-};
-
-type DropdownMenuLinkProps = LinkProps & {
-  title: string;
-  Icon: LucideIcon;
-  className?: string;
-};
-
-export const DropdownMenuLink: React.FC<DropdownMenuLinkProps> = ({
-  title,
-  Icon,
-  className,
-  ...props
-}) => {
-  return (
-    <DropdownMenuItem>
-      <Link {...props} className={cn('inline-flex items-center', className)}>
-        <Icon className="mr-2 h-4 w-4" />
-        <span>{title}</span>
-      </Link>
-    </DropdownMenuItem>
   );
 };

@@ -125,6 +125,199 @@
       "name": "Primitivism",
       "description": "Borrowing visual forms from non-Western or prehistoric peoples, often characterized by a simple, unsophisticated style."
     }
-  ]
-  
+  ],
+  "users": [
+    {
+      "id": "11",
+      "roles": ["USER"],
+      "firstname": "John",
+      "lastname": "Doe",
+      "phone": "123-456-7890",
+      "email": "john.doe@example.com",
+      "address": {
+        "city": "New York",
+        "street": "5th Avenue"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-01-01T00:00:00Z",
+      "updatedAt": "2023-06-01T00:00:00Z"
+    },
+    {
+      "id": "12",
+      "roles": ["CREATOR"],
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "phone": "098-765-4321",
+      "email": "jane.smith@example.com",
+      "address": {
+        "city": "Los Angeles",
+        "street": "Sunset Boulevard"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-02-01T00:00:00Z",
+      "updatedAt": "2023-06-02T00:00:00Z"
+    },
+    {
+      "id": "13",
+      "roles": ["ADMIN"],
+      "firstname": "Alice",
+      "lastname": "Johnson",
+      "phone": "456-123-7890",
+      "email": "alice.johnson@example.com",
+      "address": {
+        "city": "Chicago",
+        "street": "Michigan Avenue"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-03-01T00:00:00Z",
+      "updatedAt": "2023-06-03T00:00:00Z"
+    },
+    {
+      "id": "14",
+      "roles": ["USER", "CREATOR"],
+      "firstname": "Bob",
+      "lastname": "Brown",
+      "phone": "321-654-0987",
+      "email": "bob.brown@example.com",
+      "address": {
+        "city": "Houston",
+        "street": "Main Street"
+      },
+      "isBlocked": true,
+      "isDeleted": false,
+      "createdAt": "2023-04-01T00:00:00Z",
+      "updatedAt": "2023-06-04T00:00:00Z"
+    },
+    {
+      "id": "15",
+      "roles": ["USER"],
+      "firstname": "Charlie",
+      "lastname": "Davis",
+      "phone": "789-012-3456",
+      "email": "charlie.davis@example.com",
+      "address": {
+        "city": "Phoenix",
+        "street": "Central Avenue"
+      },
+      "isBlocked": false,
+      "isDeleted": true,
+      "createdAt": "2023-05-01T00:00:00Z",
+      "updatedAt": "2023-06-05T00:00:00Z"
+    },
+    {
+      "id": "16",
+      "roles": ["CREATOR"],
+      "firstname": "Diana",
+      "lastname": "Miller",
+      "phone": "654-321-0987",
+      "email": "diana.miller@example.com",
+      "address": {
+        "city": "Philadelphia",
+        "street": "Broad Street"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-06-01T00:00:00Z",
+      "updatedAt": "2023-06-06T00:00:00Z"
+    },
+    {
+      "id": "17",
+      "roles": ["ADMIN"],
+      "firstname": "Eve",
+      "lastname": "Wilson",
+      "phone": "321-098-7654",
+      "email": "eve.wilson@example.com",
+      "address": {
+        "city": "San Antonio",
+        "street": "Market Street"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-07-01T00:00:00Z",
+      "updatedAt": "2023-07-01T00:00:00Z"
+    },
+    {
+      "id": "18",
+      "roles": ["USER", "ADMIN"],
+      "firstname": "Frank",
+      "lastname": "Taylor",
+      "phone": "987-654-3210",
+      "email": "frank.taylor@example.com",
+      "address": {
+        "city": "San Diego",
+        "street": "Gaslamp Quarter"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-08-01T00:00:00Z",
+      "updatedAt": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19",
+      "roles": ["USER"],
+      "firstname": "Grace",
+      "lastname": "Anderson",
+      "phone": "234-567-8901",
+      "email": "grace.anderson@example.com",
+      "address": {
+        "city": "Dallas",
+        "street": "Elm Street"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-09-01T00:00:00Z",
+      "updatedAt": "2023-09-01T00:00:00Z"
+    },
+    {
+      "id": "20",
+      "roles": ["CREATOR"],
+      "firstname": "Hank",
+      "lastname": "Thomas",
+      "phone": "890-123-4567",
+      "email": "hank.thomas@example.com",
+      "address": {
+        "city": "San Jose",
+        "street": "Santa Clara Street"
+      },
+      "isBlocked": true,
+      "isDeleted": false,
+      "createdAt": "2023-10-01T00:00:00Z",
+      "updatedAt": "2023-10-01T00:00:00Z"
+    },
+    {
+      "id": "21",
+      "roles": ["USER"],
+      "firstname": "Ivy",
+      "lastname": "Martinez",
+      "phone": "345-678-9012",
+      "email": "ivy.martinez@example.com",
+      "address": {
+        "city": "Austin",
+        "street": "6th Street"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-11-01T00:00:00Z",
+      "updatedAt": "2023-11-01T00:00:00Z"
+    },
+    {
+      "id": "22",
+      "roles": ["CREATOR", "ADMIN"],
+      "firstname": "Jack",
+      "lastname": "Lee",
+      "phone": "567-890-1234",
+      "email": "jack.lee@example.com",
+      "address": {
+        "city": "Jacksonville",
+        "street": "Bay Street"
+      },
+      "isBlocked": false,
+      "isDeleted": false,
+      "createdAt": "2023-12-01T00:00:00Z",
+      "updatedAt": "2023-12-01T00:00:00Z"
+    }
+  ]  
 }

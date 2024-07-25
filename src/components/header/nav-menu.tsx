@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 
-import { IPaintStyle } from '@/types/paint-style.types';
+import { IPaintStyle } from '@/types/user.types';
 
-import { MenuItem } from './menu-item';
+import { MenuLink } from './menu-link';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -48,11 +48,11 @@ export const NavMenu = () => {
             <ul className="grid w-52 sm:w-96 xl:w-[750px] p-3 md:gap-1 grid-cols-2 xl:grid-cols-3">
               {paintStyles.slice(0, 8).map(({ id, name, description }) => (
                 <li key={id}>
-                  <MenuItem name={name} description={description} href={`?style=${id}`} />
+                  <MenuLink name={name} description={description} href={`?style=${id}`} />
                 </li>
               ))}
               <li>
-                <MenuItem name="View All..." description="Discover more styles" href="" />
+                <MenuLink name="View All..." description="Discover more styles" href="" />
               </li>
             </ul>
           </NavigationMenuContent>

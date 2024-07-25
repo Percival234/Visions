@@ -1,14 +1,14 @@
 import Link from 'next/link';
 
-import { IPaintStyle } from '@/types/paint-style.types';
+import { IPaintStyle } from '@/types/user.types';
 
 import { NavigationMenuLink } from '@/components/ui/navigation-menu';
 
 import { ROUTES } from '@/constants/pages-url';
 
-type MenuItemProps = Omit<IPaintStyle, 'id'> & { href: string };
+type MenuLinkProps = Omit<IPaintStyle, 'id'> & { href: string };
 
-export const MenuItem: React.FC<MenuItemProps> = ({ name, description, href }) => {
+export const MenuLink: React.FC<MenuLinkProps> = ({ name, description, href }) => {
   return (
     <NavigationMenuLink asChild className="h-full">
       <Link
