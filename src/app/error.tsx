@@ -11,8 +11,10 @@ interface ErrorProps {
   reset: () => void;
 }
 
+// TODO CHANGE isVisible TO FALSE BY DEFAULT
+
 export default function Error({ error: { stack, message }, reset }: ErrorProps) {
-  const [isVisible, setIsVisible] = useState(true); //! CHANGE TO FALSE BY DEFAULT
+  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <div className="flex flex-col items-center gap-6 py-20">

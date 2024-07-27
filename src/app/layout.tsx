@@ -4,7 +4,7 @@ import { Mulish } from 'next/font/google';
 import { Toaster } from '@/components/ui/sonner';
 import { Header } from '@/components/header/header';
 import { Footer } from '@/components/footer/footer';
-import { CenteredContainer } from '@/components/ui/centered-container';
+import { Breadcrumbs } from '@/components/breadcrumbs/breadcrumbs';
 
 import { ThemeProvider } from '@/providers/theme.provider';
 import { QueryProvider } from '@/providers/query.provider';
@@ -13,7 +13,7 @@ import './globals.scss';
 
 const mulish = Mulish({
   subsets: ['latin', 'cyrillic'],
-  weight: ['400', '500', '700'],
+  weight: ['400', '500', '600', '700'],
   style: ['normal', 'italic'],
 });
 
@@ -38,8 +38,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <QueryProvider>
             <div className="min-h-screen min-w-80 flex flex-col">
               <Header />
-              <main className="flex-1 mt-16 pt-8 min-h-full">
-                <CenteredContainer className="">{children}</CenteredContainer>
+              <main className="flex-1 mt-16">
+                <Breadcrumbs />
+                {children}
               </main>
               <Footer />
               <Toaster />

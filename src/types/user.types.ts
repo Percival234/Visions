@@ -19,7 +19,7 @@ export interface IMail {
   updatedAt: Date; // updated_at
 }
 
-export enum Roles {
+export enum RolesEnum {
   USER = 'USER',
   CREATOR = 'CREATOR',
   ADMIN = 'ADMIN',
@@ -27,7 +27,7 @@ export enum Roles {
 
 export interface IUser {
   id: string;
-  roles: Roles[];
+  roles: RolesEnum[];
   firstname: string;
   lastname: string;
   phone: string;
@@ -44,7 +44,7 @@ export interface IUser {
   totalSpent: number; // total_spend
 
   createdAt?: Date; // created_at
-  updatedAt: Date; // updated_at //! add optional setting create and update
+  updatedAt: Date; // updated_at // TODO add optional setting create and update
 }
 
 export interface IPaintStyle {
@@ -67,6 +67,7 @@ export interface IPicture {
   discount: number;
   likedBy: string[]; // liked_by_ids
   styles: []; // styles_ids
+  // totalPurchase
 
   createdAt?: Date; // created_at
   updatedAt?: Date; // updated_at
@@ -82,7 +83,7 @@ export interface IReport {
   updatedAt?: Date; // updated_at
 }
 
-export enum OrderStatus {
+export enum OrderStatusEnum {
   Pending = 'Pending',
   Confirmed = 'Confirmed',
   Preparing = 'Preparing',
@@ -94,7 +95,7 @@ export interface IOrder {
   id: string;
   sender: string; // sender_id (user_id)
   receiver: string; // receiver_id (user_id)
-  status: OrderStatus;
+  status: OrderStatusEnum;
 
   // shoppingCart: string;
 

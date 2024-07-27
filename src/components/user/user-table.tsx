@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Ban, User, Trash2, Pencil, MoreHorizontal, ArrowUpDown, Search } from 'lucide-react';
+import { Ban, User, Trash2, Pencil, MoreHorizontal, ArrowUpDown } from 'lucide-react';
 import {
   ColumnDef,
   flexRender,
@@ -11,7 +11,7 @@ import {
   useReactTable,
 } from '@tanstack/react-table';
 
-import { IUser, Roles } from '@/types/user.types';
+import { IUser, RolesEnum } from '@/types/user.types';
 
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -100,9 +100,9 @@ export const columns: ColumnDef<IUser>[] = [
       return (
         <div className="flex gap-1">
           {roles
-            .filter((role) => role !== Roles.USER)
+            .filter((role) => role !== RolesEnum.USER)
             .map((role) => (
-              <Badge key={role} variant={role === Roles.CREATOR ? 'default' : 'gold'}>
+              <Badge key={role} variant={role === RolesEnum.CREATOR ? 'default' : 'gold'}>
                 {role}
               </Badge>
             ))}
@@ -253,22 +253,6 @@ export const UsersDataTable = ({ data }: UsersDataTableProps) => {
           />{' '}
           of <span>{100}</span>
         </div>
-        {/* <div className="space-x-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.previousPage()}
-            disabled={!table.getCanPreviousPage()}>
-            Previous
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.nextPage()}
-            disabled={!table.getCanNextPage()}>
-            Next
-          </Button>
-        </div> */}
         <Pagination className="justify-end">
           <PaginationContent>
             <PaginationItem>
@@ -297,3 +281,7 @@ export const UsersDataTable = ({ data }: UsersDataTableProps) => {
     </div>
   );
 };
+// TODO ADD PAGINATION, SORT, SEARCH
+// TODO CHANGE TABLE COMPONENTS
+// TODO ADD FUNCTION FOR ACTIONS
+// TODO ADD WRITE FUNCTIONS

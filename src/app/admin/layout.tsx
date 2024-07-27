@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Admin Panel',
   robots: {
     index: false,
+    follow: false,
   },
 };
 
@@ -12,5 +13,5 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
-  return <div>{children}</div>;
+  return <>{children}</>;
 }

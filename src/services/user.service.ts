@@ -25,6 +25,6 @@ class UsersService {
   // }
 }
 
-// ! ADD AXIOS RESPONSE TYPES
+// TODO ADD AXIOS RESPONSE TYPES
 
 export const usersService = new UsersService();

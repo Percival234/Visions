@@ -10,8 +10,8 @@ export interface TitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
 const headingVariants = cva('font-bold leading-none tracking-tight', {
   variants: {
     size: {
-      h1: 'text-3xl',
-      h2: 'text-2xl',
+      h1: 'text-5xl',
+      h2: 'text-3xl',
       h3: 'text-xl',
       h4: 'text-lg',
       h5: 'text-base',
