@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 
-type CenteredContainerProps = React.HTMLAttributes<HTMLDivElement>;
+interface CenteredContainerProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-export const CenteredContainer: React.FC<CenteredContainerProps> = ({ className, ...props }) => {
+export const CenteredContainer = ({ className, ...props }: CenteredContainerProps) => {
   return <div className={cn('container px-3', className)} {...props} />;
 };

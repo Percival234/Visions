@@ -33,6 +33,7 @@ export interface IUser {
   phone: string;
   email: string;
   // password:
+  image: string;
   address: {
     city: string;
     street: string;
@@ -40,8 +41,10 @@ export interface IUser {
   isBlocked: boolean; // is_blocked
   isDeleted: boolean; // is_deleted
 
+  totalSpent: number; // total_spend
+
   createdAt?: Date; // created_at
-  updatedAt?: Date; // updated_at
+  updatedAt: Date; // updated_at //! add optional setting create and update
 }
 
 export interface IPaintStyle {

@@ -30,7 +30,7 @@ import {
   DropdownMenuSubTrigger,
 } from '@/components/ui/dropdown-menu';
 
-import { ROUTES } from '@/constants/pages-url';
+import { ROUTES } from '@/constants/pages-url.constant';
 
 export const UserDropdownMenu = () => {
   return (

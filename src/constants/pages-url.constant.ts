@@ -7,6 +7,7 @@ const ROOT_PATHS = {
 
 const ADMIN_ROUTES = {
   DASHBOARD: `${ROOT_PATHS.ADMIN}`,
+  MAIL: `${ROOT_PATHS.ADMIN}/mail`,
   USERS: `${ROOT_PATHS.ADMIN}/users`,
   ORDERS: `${ROOT_PATHS.ADMIN}/orders`,
   REPORTS: `${ROOT_PATHS.ADMIN}/reports`,

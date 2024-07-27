@@ -1,22 +1,16 @@
+import Link from 'next/link';
 import { LucideIcon } from 'lucide-react';
-import Link, { LinkProps } from 'next/link';
 
 import { DropdownMenuItem } from './dropdown-menu';
 
 import { cn } from '@/lib/utils';
 
-type DropdownMenuLinkProps = LinkProps & {
+interface DropdownMenuLinkProps extends React.ComponentProps<typeof Link> {
   title: string;
   Icon: LucideIcon;
-  className?: string;
-};
+}
 
-export const DropdownMenuLink: React.FC<DropdownMenuLinkProps> = ({
-  title,
-  Icon,
-  className,
-  ...props
-}) => {
+export const DropdownMenuLink = ({ title, Icon, className, ...props }: DropdownMenuLinkProps) => {
   return (
     <DropdownMenuItem>
       <Link {...props} className={cn('inline-flex items-center', className)}>

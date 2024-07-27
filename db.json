@@ -1,5 +1,5 @@
 {
-  "categories": [
+  "paint-styles": [
     {
       "id": "1",
       "name": "Realism",
@@ -134,10 +134,12 @@
       "lastname": "Doe",
       "phone": "123-456-7890",
       "email": "john.doe@example.com",
+      "image": "https://example.com/images/john.jpg",
       "address": {
         "city": "New York",
         "street": "5th Avenue"
       },
+      "totalSpent": 150000,
       "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-01-01T00:00:00Z",
@@ -145,31 +147,35 @@
     },
     {
       "id": "12",
-      "roles": ["CREATOR"],
+      "roles": ["USER", "CREATOR"],
       "firstname": "Jane",
       "lastname": "Smith",
       "phone": "098-765-4321",
       "email": "jane.smith@example.com",
+      "image": "https://example.com/images/jane.jpg",
       "address": {
         "city": "Los Angeles",
         "street": "Sunset Boulevard"
       },
-      "isBlocked": false,
+      "totalSpent": 200000,
+      "isBlocked": true,
       "isDeleted": false,
       "createdAt": "2023-02-01T00:00:00Z",
       "updatedAt": "2023-06-02T00:00:00Z"
     },
     {
       "id": "13",
-      "roles": ["ADMIN"],
+      "roles": ["USER", "ADMIN"],
       "firstname": "Alice",
       "lastname": "Johnson",
       "phone": "456-123-7890",
       "email": "alice.johnson@example.com",
+      "image": "https://example.com/images/alice.jpg",
       "address": {
         "city": "Chicago",
         "street": "Michigan Avenue"
       },
+      "totalSpent": 250000,
       "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-03-01T00:00:00Z",
@@ -182,11 +188,13 @@
       "lastname": "Brown",
       "phone": "321-654-0987",
       "email": "bob.brown@example.com",
+      "image": "https://example.com/images/bob.jpg",
       "address": {
         "city": "Houston",
         "street": "Main Street"
       },
-      "isBlocked": true,
+      "totalSpent": 100000,
+      "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-04-01T00:00:00Z",
       "updatedAt": "2023-06-04T00:00:00Z"
@@ -198,10 +206,12 @@
       "lastname": "Davis",
       "phone": "789-012-3456",
       "email": "charlie.davis@example.com",
+      "image": "https://example.com/images/charlie.jpg",
       "address": {
         "city": "Phoenix",
         "street": "Central Avenue"
       },
+      "totalSpent": 50000,
       "isBlocked": false,
       "isDeleted": true,
       "createdAt": "2023-05-01T00:00:00Z",
@@ -209,15 +219,17 @@
     },
     {
       "id": "16",
-      "roles": ["CREATOR"],
+      "roles": ["USER", "CREATOR"],
       "firstname": "Diana",
       "lastname": "Miller",
       "phone": "654-321-0987",
       "email": "diana.miller@example.com",
+      "image": "https://example.com/images/diana.jpg",
       "address": {
         "city": "Philadelphia",
         "street": "Broad Street"
       },
+      "totalSpent": 300000,
       "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-06-01T00:00:00Z",
@@ -225,15 +237,17 @@
     },
     {
       "id": "17",
-      "roles": ["ADMIN"],
+      "roles": ["USER"],
       "firstname": "Eve",
       "lastname": "Wilson",
       "phone": "321-098-7654",
       "email": "eve.wilson@example.com",
+      "image": "https://example.com/images/eve.jpg",
       "address": {
         "city": "San Antonio",
         "street": "Market Street"
       },
+      "totalSpent": 150000,
       "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-07-01T00:00:00Z",
@@ -241,15 +255,17 @@
     },
     {
       "id": "18",
-      "roles": ["USER", "ADMIN"],
+      "roles": ["USER"],
       "firstname": "Frank",
       "lastname": "Taylor",
       "phone": "987-654-3210",
       "email": "frank.taylor@example.com",
+      "image": "https://example.com/images/frank.jpg",
       "address": {
         "city": "San Diego",
         "street": "Gaslamp Quarter"
       },
+      "totalSpent": 220000,
       "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-08-01T00:00:00Z",
@@ -262,10 +278,12 @@
       "lastname": "Anderson",
       "phone": "234-567-8901",
       "email": "grace.anderson@example.com",
+      "image": "https://example.com/images/grace.jpg",
       "address": {
         "city": "Dallas",
         "street": "Elm Street"
       },
+      "totalSpent": 80000,
       "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-09-01T00:00:00Z",
@@ -273,15 +291,17 @@
     },
     {
       "id": "20",
-      "roles": ["CREATOR"],
+      "roles": ["USER", "CREATOR"],
       "firstname": "Hank",
       "lastname": "Thomas",
       "phone": "890-123-4567",
       "email": "hank.thomas@example.com",
+      "image": "https://example.com/images/hank.jpg",
       "address": {
         "city": "San Jose",
         "street": "Santa Clara Street"
       },
+      "totalSpent": 50000,
       "isBlocked": true,
       "isDeleted": false,
       "createdAt": "2023-10-01T00:00:00Z",
@@ -294,10 +314,12 @@
       "lastname": "Martinez",
       "phone": "345-678-9012",
       "email": "ivy.martinez@example.com",
+      "image": "https://example.com/images/ivy.jpg",
       "address": {
         "city": "Austin",
         "street": "6th Street"
       },
+      "totalSpent": 120000,
       "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-11-01T00:00:00Z",
@@ -305,19 +327,21 @@
     },
     {
       "id": "22",
-      "roles": ["CREATOR", "ADMIN"],
+      "roles": ["USER", "CREATOR", "ADMIN"],
       "firstname": "Jack",
       "lastname": "Lee",
       "phone": "567-890-1234",
       "email": "jack.lee@example.com",
+      "image": "https://example.com/images/jack.jpg",
       "address": {
         "city": "Jacksonville",
         "street": "Bay Street"
       },
+      "totalSpent": 250000,
       "isBlocked": false,
       "isDeleted": false,
       "createdAt": "2023-12-01T00:00:00Z",
       "updatedAt": "2023-12-01T00:00:00Z"
     }
-  ]  
+  ]
 }

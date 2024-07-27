@@ -1,0 +1,4 @@
+favicon
+metadata
+loading skeleton
+create and update required or partial

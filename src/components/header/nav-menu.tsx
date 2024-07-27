@@ -1,8 +1,5 @@
-'use client';
-
 import Link from 'next/link';
-
-import { IPaintStyle } from '@/types/user.types';
+import { useQuery } from '@tanstack/react-query';
 
 import { MenuLink } from './menu-link';
 import {
@@ -15,30 +12,20 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 
-import { ROUTES } from '@/constants/pages-url';
-import { SERVER_URL } from '@/constants/server-url';
+import { ROUTES } from '@/constants/pages-url.constant';
 
-import { useCallback, useEffect, useState } from 'react';
+import { paintStylesService } from '@/services/paint-style.service';
 
-export const NavMenu = () => {
-  const [paintStyles, setPaintStyles] = useState<IPaintStyle[]>([]);
+export const revalidate = 0;
 
-  const getPaintStyles = useCallback(async () => {
-    const response = await fetch(`${SERVER_URL}/categories`);
-    const data: IPaintStyle[] = await response.json();
-    setPaintStyles(data);
-  }, []);
-
-  useEffect(() => {
-    getPaintStyles();
-    console.log('first'); // ! DELETE
-  }, [getPaintStyles]);
+export const NavMenu = async () => {
+  const paintStyles = await paintStylesService.getPaintStyles();
 
   return (
     <NavigationMenu>
-      <NavigationMenuList className="gap-1">
+      <NavigationMenuList className="space-x-2">
         <NavigationMenuItem>
-          <Link href={ROUTES.MAIN.HOME} passHref>
+          <Link href={ROUTES.MAIN.HOME} passHref legacyBehavior>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>Home</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -58,7 +45,7 @@ export const NavMenu = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={ROUTES.MAIN.CART} passHref>
+          <Link href={ROUTES.MAIN.CART} passHref legacyBehavior>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Shopping Cart
             </NavigationMenuLink>

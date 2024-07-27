@@ -6,7 +6,8 @@ import { Header } from '@/components/header/header';
 import { Footer } from '@/components/footer/footer';
 import { CenteredContainer } from '@/components/ui/centered-container';
 
-import { ThemeProvider } from '@/providers/theme-provider';
+import { ThemeProvider } from '@/providers/theme.provider';
+import { QueryProvider } from '@/providers/query.provider';
 
 import './globals.scss';
 
@@ -21,23 +22,29 @@ export const metadata: Metadata = {
   description: 'Immerse yourself in the world of art with Visions',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={mulish.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
-          <div className="min-h-screen min-w-80 flex flex-col">
-            <Header />
-            <main className="flex-1 mt-16">
-              <CenteredContainer>{children}</CenteredContainer>
-            </main>
-            <Footer />
-            <Toaster />
-          </div>
+          <QueryProvider>
+            <div className="min-h-screen min-w-80 flex flex-col">
+              <Header />
+              <main className="flex-1 mt-16 pt-8 min-h-full">
+                <CenteredContainer className="">{children}</CenteredContainer>
+              </main>
+              <Footer />
+              <Toaster />
+            </div>
+          </QueryProvider>
         </ThemeProvider>
       </body>
     </html>
