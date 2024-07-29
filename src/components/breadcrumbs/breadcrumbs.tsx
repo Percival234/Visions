@@ -27,9 +27,11 @@ export const Breadcrumbs = () => {
               const formattedValue = value.charAt(0).toUpperCase() + value.slice(1);
               const isLast = index === pathnames.length - 1;
 
+              console.log(value);
+
               return (
                 <>
-                  <BreadcrumbItem key={href}>
+                  <BreadcrumbItem key={value}>
                     {isLast ? (
                       <BreadcrumbPage>{formattedValue}</BreadcrumbPage>
                     ) : (

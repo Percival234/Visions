@@ -64,10 +64,10 @@
     @apply border-border;
   }
   html {
-    @apply font-medium sm:text-lg;
+    @apply font-medium sm:text-lg h-full;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground h-full;
   }
 }
 

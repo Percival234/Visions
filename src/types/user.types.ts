@@ -38,10 +38,9 @@ export interface IUser {
     city: string;
     street: string;
   };
+  totalSpent: number; // total_spend
   isBlocked: boolean; // is_blocked
   isDeleted: boolean; // is_deleted
-
-  totalSpent: number; // total_spend
 
   createdAt?: Date; // created_at
   updatedAt: Date; // updated_at // TODO add optional setting create and update
@@ -111,4 +110,26 @@ export interface IReview {
 
   createdAt?: Date; // created_at
   updatedAt?: Date; // updated_at
+}
+
+export interface ISignInForm {
+  email: string;
+  password: string;
+}
+
+export interface IUserSignUpForm {
+  email: string;
+  firtsname: string;
+  lastname: string;
+  password: string;
+}
+
+export interface ICreatorSignUpForm {
+  email: string;
+  firtsname: string;
+  lastname: string;
+  password: string;
+  phoneNumber: string;
+  creditCard: string;
+  workshopName: string;
 }
