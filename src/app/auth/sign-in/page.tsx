@@ -1,34 +1,32 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 
-import { Button } from '@/components/ui/button';
-import { ROUTES } from '@/constants/pages-url.constant';
-import { SignInForm } from '@/components/auth/sign-in-form';
+import { SignInForm } from '@/components/forms/sign-in-form';
 
 export const metadata: Metadata = {
   title: 'Sign in',
 };
 
-export default function SignInPage() {
+export default function Page() {
   return (
     <div className="h-screen grid grid-cols-2">
-      <div className="relative">
+      <div className="relative flex flex-col items-center text-white font-bold text-5xl px-4 pt-24 [text-shadow:_0_1px_0_rgb(0_0_0_/_30%)] text-center">
+        <div className="fadeInUp">
+          <q>
+            Painting is a thing of the mind, because it creates similarity by art, not by the hand.
+          </q>
+          <div className="text-2xl mt-5">- Leonardo da Vinci</div>
+        </div>
         <Image
           src="http://localhost:3333/farm-lifestyle-digital-art.jpg"
           alt="Flowers farm"
           fill
-          className="absolute object-cover object-top"
+          className="absolute object-cover object-top -z-10"
         />
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <SignInForm />
-        <Button asChild variant="link">
-          <Link href={ROUTES.AUTH.SIGN_UP}>Sign up</Link>
-        </Button>
-      </div>
+      <SignInForm />
     </div>
   );
 }
 
-// TODO CHECK ALL PAGES FOR METADATA AND NAME FUNCTION
+// TODO CHECK ALL PAGES METADATA

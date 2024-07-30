@@ -11,10 +11,8 @@ interface ErrorProps {
   reset: () => void;
 }
 
-// TODO CHANGE isVisible TO FALSE BY DEFAULT
-
 export default function Error({ error: { stack, message }, reset }: ErrorProps) {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <div className="flex flex-col items-center gap-6 py-20">
@@ -26,7 +24,7 @@ export default function Error({ error: { stack, message }, reset }: ErrorProps) 
         </Button>
       </div>
       {isVisible && (
-        <Card className="w-full max-w-[30rem]">
+        <Card className="w-full max-w-[30rem] overflow-hidden">
           <CardHeader>
             <CardTitle className="text-xl">{message}</CardTitle>
           </CardHeader>

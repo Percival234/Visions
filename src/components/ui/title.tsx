@@ -12,7 +12,7 @@ const headingVariants = cva('font-bold leading-none tracking-tight', {
     size: {
       h1: 'text-5xl',
       h2: 'text-3xl',
-      h3: 'text-xl',
+      h3: 'text-2xl',
       h4: 'text-lg',
       h5: 'text-base',
       h6: 'text-base',

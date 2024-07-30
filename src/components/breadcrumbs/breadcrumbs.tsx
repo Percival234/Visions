@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { usePathname } from 'next/navigation';
 
 import {
@@ -27,11 +28,9 @@ export const Breadcrumbs = () => {
               const formattedValue = value.charAt(0).toUpperCase() + value.slice(1);
               const isLast = index === pathnames.length - 1;
 
-              console.log(value);
-
               return (
-                <>
-                  <BreadcrumbItem key={value}>
+                <React.Fragment key={value}>
+                  <BreadcrumbItem>
                     {isLast ? (
                       <BreadcrumbPage>{formattedValue}</BreadcrumbPage>
                     ) : (
@@ -45,7 +44,7 @@ export const Breadcrumbs = () => {
                     )}
                   </BreadcrumbItem>
                   {!isLast && <BreadcrumbSeparator />}
-                </>
+                </React.Fragment>
               );
             })}
           </BreadcrumbList>
