@@ -1,8 +1,7 @@
-export type { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Visions',
-  description: '',
+  title: 'Admin',
 };
 
 interface LayoutProps {

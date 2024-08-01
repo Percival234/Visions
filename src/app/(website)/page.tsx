@@ -1,6 +1,9 @@
+import { Introduction } from '@/components/introduction/introduction';
+
 export default function Page() {
   return (
     <>
+      <Introduction />
       <div>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero accusamus placeat quasi
         saepe ipsam cupiditate optio laborum, autem omnis corporis deserunt ratione, neque

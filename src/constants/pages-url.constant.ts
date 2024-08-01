@@ -38,6 +38,7 @@ const AUTH_ROUTES = {
 
 const MAIN_ROUTES = {
   HOME: '/',
+  FAQS: '/FAQs',
   STORE: '/store',
   CART: '/shopping-cart',
   CHECKOUT: '/checkout',

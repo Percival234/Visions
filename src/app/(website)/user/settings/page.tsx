@@ -17,11 +17,11 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <CenteredContainer>
-      <Title size="h2" className="mb-1">
-        Settings
-      </Title>
-      <Paragraph>Manage your account setting</Paragraph>
-      <Separator className="my-5" />
+      <div className="space-y-1">
+        <Title size="h2">Settings</Title>
+        <Paragraph>Manage your account setting</Paragraph>
+      </div>
+      <Separator />
       <Tabs defaultValue="personal" className="flex gap-10">
         <TabsList
           aria-orientation="vertical"
@@ -60,4 +60,3 @@ export default function Page() {
 }
 
 // TODO MUTED to ACCENT
-// TODO ADD назву соціанки в реєстрації

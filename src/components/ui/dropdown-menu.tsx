@@ -78,7 +78,8 @@ const dropdownMenuItemVariants = cva(
     variants: {
       variant: {
         default: 'focus:bg-accent focus:text-accent-foreground',
-        destructive: 'bg-destructive/50 focus:bg-destructive focus:text-destructive-foreground',
+        destructive:
+          'bg-destructive text-white dark:bg-destructive/50 focus:bg-destructive focus:text-destructive-foreground',
       },
     },
     defaultVariants: {

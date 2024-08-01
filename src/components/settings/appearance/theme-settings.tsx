@@ -8,7 +8,7 @@ import { Paragraph } from '@/components/ui/paragrah';
 import { Separator } from '@/components/ui/separator';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 
-import { WEBSITE_NAME } from '@/constants/website-name';
+import { WEBSITE_NAME } from '@/constants/website-name.constant';
 
 export const ThemeSettings = () => {
   const { theme, setTheme } = useTheme();

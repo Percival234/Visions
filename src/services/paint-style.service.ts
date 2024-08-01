@@ -1,4 +1,4 @@
-import { IPaintStyle } from '@/types/user.types';
+import { IPaintStyle } from '@/types/user.type';
 
 import { api } from '@/api/axios';
 

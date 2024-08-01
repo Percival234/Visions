@@ -12,10 +12,11 @@ import {
   ImagePlus,
   ChartColumn,
   MessageSquareWarning,
+  CircleHelp,
 } from 'lucide-react';
 
-import { DropdownMenuLink } from '../ui/dropdown-link';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { DropdownMenuLink } from '@/components/ui/dropdown-link';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   DropdownMenu,
   DropdownMenuSub,
@@ -32,7 +33,7 @@ import {
 
 import { ROUTES } from '@/constants/pages-url.constant';
 
-export const UserDropdownMenu = () => {
+export const UserNavMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="cursor-pointer">
@@ -55,7 +56,7 @@ export const UserDropdownMenu = () => {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <UserPen className="mr-2 h-4 w-4" />
-              <span>Admin Panel</span>
+              <span>Admin</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
@@ -81,7 +82,7 @@ export const UserDropdownMenu = () => {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <UserCog className="mr-2 h-4 w-4" />
-              <span>Creator Panel</span>
+              <span>Creator</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
@@ -102,7 +103,10 @@ export const UserDropdownMenu = () => {
           </DropdownMenuSub>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuLink Icon={LifeBuoy} title="Support" href={ROUTES.USER.SUPPORT} />
+        <DropdownMenuGroup>
+          <DropdownMenuLink Icon={LifeBuoy} title="Support" href={ROUTES.USER.SUPPORT} />
+          <DropdownMenuLink Icon={CircleHelp} title="FAQs" href={ROUTES.MAIN.FAQS} />
+        </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <LogOut className="mr-2 h-4 w-4" />
@@ -112,3 +116,5 @@ export const UserDropdownMenu = () => {
     </DropdownMenu>
   );
 };
+
+// TODO MAKE PRIORITY PROPERTY TO REPORT

@@ -147,7 +147,7 @@
     },
     {
       "id": "12",
-      "roles": ["USER", "CREATOR"],
+      "roles": ["USER", "CREATOR", "ADMIN"],
       "firstname": "Jane",
       "lastname": "Smith",
       "phone": "098-765-4321",
@@ -343,5 +343,157 @@
       "createdAt": "2023-12-01T00:00:00Z",
       "updatedAt": "2023-12-01T00:00:00Z"
     }
-  ]
+  ],
+  "mail": [
+    {
+      "id": "111",
+      "userId": "12",
+      "messages": [
+        {
+          "id": "1111",
+          "title": "Order Shipped ipsum dolor sit amet consectetur adipisicing elit.",
+          "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet impedit labore accusamus minima. Laudantium eos nesciunt porro illum ab, ut sapiente non accusamus incidunt ipsa enim culpa, amet nam?\t Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum modi nihil voluptatem aperiam, corrupti officiis itaque iste, quisquam, veniam ea exercitationem tempora facilis minus consequuntur vel. Odio aliquam earum, explicabo rerum, aliquid blanditiis necessitatibus in molestias labore, porro praesentium consequuntur Accusamus vitae officia quisquam dolorum. Voluptas, sit enim magni, asperiores nam cum laboriosam commodi sapiente eveniet consectetur temporibus quae eius ut velit nobis et! Noneligendi ipsa magni cumque. Perspiciatis saepe, vitae distinctio voluptatum quasi natuscorrupti maiores optio. Sunt ducimus hic, labore sed quo, delectus suscipit, minima abrepellendus dicta est illo. Nihil ab delectus laudantium, quo animi odio.\n Lorem ipsum dolorsit amet consectetur adipisicing elit. Dolore quidem autem totam laborum. Possimus iustosoluta fuga quidem porro, quam adipisci officiis earum placeat natus at a ipsam velit odit.",
+          "sender": "Admin",
+          "receiverMailId": "111",
+          "isReadByReceiver": false,
+          "createdAt": "2024-08-01T10:00:00Z",
+          "updatedAt": "2024-08-01T10:00:00Z"
+        },
+        {
+          "id": "1112",
+          "text": "Your password was changed successfully.",
+          "title": "Password Changed",
+          "sender": "Admin",
+          "receiverMailId": "111",
+          "isReadByReceiver": true,
+          "createdAt": "2024-08-01T11:00:00Z",
+          "updatedAt": "2024-08-01T11:05:00Z"
+        },
+        {
+          "id": "1113",
+          "text": "You have a new message from your friend.",
+          "title": "New Message",
+          "sender": "12",
+          "receiverMailId": "111",
+          "isReadByReceiver": true,
+          "createdAt": "2024-08-01T12:00:00Z",
+          "updatedAt": "2024-08-01T12:00:00Z"
+        },
+        {
+          "id": "1114",
+          "text": "Your subscription is about to expire.",
+          "title": "Subscription Expiry",
+          "sender": "12",
+          "receiverMailId": "111",
+          "isReadByReceiver": false,
+          "createdAt": "2024-08-01T13:00:00Z",
+          "updatedAt": "2024-08-01T13:00:00Z"
+        },
+        {
+          "id": "1115",
+          "text": "Your profile has been updated successfully.",
+          "title": "Profile Updated",
+          "sender": "12",
+          "receiverMailId": "111",
+          "isReadByReceiver": true,
+          "createdAt": "2024-08-01T14:00:00Z",
+          "updatedAt": "2024-08-01T14:00:00Z"
+        },
+        {
+          "id": "1116",
+          "text": "New comment on your post.",
+          "title": "New Comment",
+          "sender": "12",
+          "receiverMailId": "111",
+          "isReadByReceiver": false,
+          "createdAt": "2024-08-01T15:00:00Z",
+          "updatedAt": "2024-08-01T15:00:00Z"
+        },
+        {
+          "id": "1117",
+          "text": "Your friend has sent you a friend request.",
+          "title": "Friend Request",
+          "sender": "12",
+          "receiverMailId": "111",
+          "isReadByReceiver": false,
+          "createdAt": "2024-08-01T16:00:00Z",
+          "updatedAt": "2024-08-01T16:00:00Z"
+        }
+      ],
+      "createdAt": "2023-01-01T00:00:00Z",
+      "updatedAt": "2023-06-01T00:00:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1111",
+      "text": "Your order has been shipped.",
+      "title": "Order Shipped",
+      "sender": "12",
+      "receiverMailId": "111",
+      "isReadByReceiver": false,
+      "createdAt": "2024-08-01T10:00:00Z",
+      "updatedAt": "2024-08-01T10:00:00Z"
+    },
+    {
+      "id": "1112",
+      "text": "Your password was changed successfully.",
+      "title": "Password Changed",
+      "sender": "12",
+      "receiverMailId": "111",
+      "isReadByReceiver": true,
+      "createdAt": "2024-08-01T11:00:00Z",
+      "updatedAt": "2024-08-01T11:05:00Z"
+    },
+    {
+      "id": "1113",
+      "text": "You have a new message from your friend.",
+      "title": "New Message",
+      "sender": "12",
+      "receiverMailId": "111",
+      "isReadByReceiver": false,
+      "createdAt": "2024-08-01T12:00:00Z",
+      "updatedAt": "2024-08-01T12:00:00Z"
+    },
+    {
+      "id": "1114",
+      "text": "Your subscription is about to expire.",
+      "title": "Subscription Expiry",
+      "sender": "12",
+      "receiverMailId": "111",
+      "isReadByReceiver": false,
+      "createdAt": "2024-08-01T13:00:00Z",
+      "updatedAt": "2024-08-01T13:00:00Z"
+    },
+    {
+      "id": "1115",
+      "text": "Your profile has been updated successfully.",
+      "title": "Profile Updated",
+      "sender": "12",
+      "receiverMailId": "111",
+      "isReadByReceiver": true,
+      "createdAt": "2024-08-01T14:00:00Z",
+      "updatedAt": "2024-08-01T14:00:00Z"
+    },
+    {
+      "id": "1116",
+      "text": "New comment on your post.",
+      "title": "New Comment",
+      "sender": "12",
+      "receiverMailId": "111",
+      "isReadByReceiver": false,
+      "createdAt": "2024-08-01T15:00:00Z",
+      "updatedAt": "2024-08-01T15:00:00Z"
+    },
+    {
+      "id": "1117",
+      "text": "Your friend has sent you a friend request.",
+      "title": "Friend Request",
+      "sender": "12",
+      "receiverMailId": "111",
+      "isReadByReceiver": false,
+      "createdAt": "2024-08-01T16:00:00Z",
+      "updatedAt": "2024-08-01T16:00:00Z"
+    }
+  ]  
 }

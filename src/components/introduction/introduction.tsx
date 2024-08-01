@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Store } from 'lucide-react';
+import { ArrowDown, Store } from 'lucide-react';
 
 import { Mark } from '@/components/ui/mark';
 import { Title } from '@/components/ui/title';
@@ -11,13 +11,13 @@ import { ROUTES } from '@/constants/pages-url.constant';
 
 export const Introduction = () => {
   return (
-    <section className="pt-20 h-screen max-h-screen relative">
-      <CenteredContainer>
-        <div className="flex flex-col items-center text-center">
-          <Title size="h1" className="mb-6">
+    <section className="h-[93vh] relative">
+      <CenteredContainer className="items-center">
+        <div className="flex flex-col items-center text-center pt-40">
+          <Title size="h1" className="mb-6 fadeInUp">
             Immerse Yourself in the World of Art with Visions
           </Title>
-          <p className="dark:text-white/80 text-lg mb-10">
+          <p className="text-muted-foreground text-lg mb-16 delay-200 fadeInUp">
             The leading marketplace for art lovers! <br /> <Mark color="lime">Discover</Mark>,{' '}
             <Mark color="yellow">create</Mark> and <Mark color="red">buy</Mark> amazing paintings!
           </p>
@@ -33,7 +33,7 @@ export const Introduction = () => {
             </Button>
           </div>
         </div>
-        <div className="absolute top-0 left-0 right-0 bottom-0">
+        {/* <div className="absolute top-0 left-0 right-0 bottom-0">
           <div className="absolute bottom-20 right-28 w-[450px] rounded overflow-hidden z-20">
             <Image
               src="http://localhost:3333/girl_dog_waterfall.jpg"
@@ -80,7 +80,13 @@ export const Introduction = () => {
               quality={100}
             />
           </div>
-        </div>
+        </div> */}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="border border-solid border-accent rounded-full absolute bottom-5 animate-bounce">
+          <ArrowDown />
+        </Button>
       </CenteredContainer>
     </section>
   );

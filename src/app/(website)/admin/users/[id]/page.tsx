@@ -1,6 +1,6 @@
 import { Title } from '@/components/ui/title';
 
-import { IParams } from '@/types/url-params.types';
+import { IParams } from '@/types/url-params.type';
 
 export default function Page({ params }: IParams) {
   return (

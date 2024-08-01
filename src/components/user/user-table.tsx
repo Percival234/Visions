@@ -11,7 +11,7 @@ import {
   useReactTable,
 } from '@tanstack/react-table';
 
-import { IUser, RolesEnum } from '@/types/user.types';
+import { IUser, RolesEnum } from '@/types/user.type';
 
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -49,6 +49,7 @@ import { ROUTES } from '@/constants/pages-url.constant';
 
 import { cn } from '@/lib/utils';
 
+import { dateFormatter } from '@/helpers/formatters/date-formatter';
 import { priceFormatter } from '@/helpers/formatters/price-formatter';
 
 export const columns: ColumnDef<IUser>[] = [
@@ -115,11 +116,7 @@ export const columns: ColumnDef<IUser>[] = [
     header: 'Last update',
     cell: ({ row }) => {
       const { updatedAt } = row.original;
-      return (
-        <div className="text-muted-foreground">
-          {new Date(updatedAt).toLocaleDateString('uk-UK')}
-        </div>
-      );
+      return <div className="text-accent-foreground">{dateFormatter(updatedAt)}</div>;
     },
   },
   {
@@ -160,11 +157,7 @@ export const columns: ColumnDef<IUser>[] = [
   },
 ];
 
-interface UsersDataTableProps {
-  data: IUser[];
-}
-
-export const UsersDataTable = ({ data }: UsersDataTableProps) => {
+export const UsersDataTable = ({ data }: { data: IUser[] }) => {
   const [rowSelection, setRowSelection] = React.useState({});
 
   const table = useReactTable({
@@ -184,7 +177,7 @@ export const UsersDataTable = ({ data }: UsersDataTableProps) => {
   });
 
   return (
-    <div className="w-full">
+    <>
       <div className="flex items-center justify-between gap-2 mb-5">
         <Input placeholder="Find by id, name or email" className="max-w-sm" />
         <div className="flex items-center gap-3">
@@ -278,7 +271,7 @@ export const UsersDataTable = ({ data }: UsersDataTableProps) => {
           </PaginationContent>
         </Pagination>
       </div>
-    </div>
+    </>
   );
 };
 // TODO ADD PAGINATION, SORT, SEARCH

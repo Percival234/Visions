@@ -1,5 +1,5 @@
-import { IUser } from '@/types/user.types';
-import { IMessageResponse } from '@/types/message-response.types';
+import { IUser } from '@/types/user.type';
+import { IMessageResponse } from '@/types/message-response.type';
 
 import { api } from '@/api/axios';
 
@@ -10,8 +10,9 @@ class UsersService {
     const response = await api.get(this.endpoint);
     return response.data;
   }
+
   async getUserById(id: string): Promise<IUser> {
-    const response = await api.get(`${this.endpoint}/${id}`);
+    const response = await api.get(`${this.endpoint}/${12}`);
     return response.data;
   }
   // async getUserDetails(id: string): Promise<IUser> {

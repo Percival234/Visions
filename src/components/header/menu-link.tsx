@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { IPaintStyle } from '@/types/user.types';
+import { IPaintStyle } from '@/types/paint-style.type';
 
 import { ROUTES } from '@/constants/pages-url.constant';
 
