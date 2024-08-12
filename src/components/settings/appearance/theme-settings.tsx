@@ -15,25 +15,26 @@ export const ThemeSettings = () => {
   return (
     <div className="space-y-3">
       <div className="space-y-2">
-        <Title size="h4">Theme preferences</Title>
+        <Title size="h4">Налаштування теми</Title>
         <Separator />
         <Paragraph>
-          Choose how {WEBSITE_NAME} looks to you. Select a single theme, or sync with your system.
+          Виберіть, як {WEBSITE_NAME} виглядатиме для вас. Виберіть одну тему або синхронізуйте її з
+          системою.
         </Paragraph>
       </div>
-      <Title size="h5">Theme mode:</Title>
+      <Title size="h5">Тема:</Title>
       <RadioGroup defaultValue={theme} onValueChange={(value) => setTheme(value)}>
         <div className="flex items-center space-x-2">
           <RadioGroupItem value="light" id="light-theme" />
-          <Label htmlFor="light-theme">Light</Label>
+          <Label htmlFor="light-theme">Світла</Label>
         </div>
         <div className="flex items-center space-x-2">
           <RadioGroupItem value="dark" id="dark-theme" />
-          <Label htmlFor="dark-theme">Dark</Label>
+          <Label htmlFor="dark-theme">Темна</Label>
         </div>
         <div className="flex items-center space-x-2">
           <RadioGroupItem value="system" id="system-theme" />
-          <Label htmlFor="system-theme">System</Label>
+          <Label htmlFor="system-theme">Система</Label>
         </div>
       </RadioGroup>
     </div>

@@ -1,12 +1,12 @@
-import { IPaintStyle } from '@/types/user.type';
+import { IPaintingStyle } from '@/types/painting-style.type';
 
 import { api } from '@/api/axios';
 
-class PaintStylesService {
-  constructor(private endpoint: string = '/paint-styles') {}
+class PaintingStylesService {
+  private endpoint = '/painting-styles';
 
-  async getPaintStyles(): Promise<IPaintStyle[]> {
-    const response = await api.get<IPaintStyle[]>('/paint-styles');
+  async getPaintingStyles(): Promise<IPaintingStyle[]> {
+    const response = await api.get<IPaintingStyle[]>(this.endpoint);
     return response.data;
   }
   // async createPaintStyle(data): Promise<IMessageResponse> {
@@ -20,4 +20,4 @@ class PaintStylesService {
   // }
 }
 
-export const paintStylesService = new PaintStylesService();
+export const paintingStylesService = new PaintingStylesService();

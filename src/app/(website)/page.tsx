@@ -96,5 +96,4 @@ export default function Page() {
   );
 }
 
-// TODO create paragraph component and span
 // TODO ADD import orders prettier

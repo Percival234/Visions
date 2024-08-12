@@ -12,21 +12,19 @@ import {
   FormMessage,
   FormDescription,
 } from '@/components/ui/form';
-import { Input } from '../ui/input';
-import { Title } from '../ui/title';
-import { Label } from '../ui/label';
-import { Button } from '../ui/button';
-import { Paragraph } from '../ui/paragrah';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Button } from '@/components/ui/button';
 
 const formSchema = z.object({
   currentPassword: z
     .string()
-    .min(8, 'Min lenght is 8 characters')
-    .max(16, 'Max length is 16 characters'),
+    .min(8, 'Мінімальна довжина 8 символів')
+    .max(16, 'Максимальна довжина 16 символів'),
   newPassword: z
     .string()
-    .min(8, 'Min lenght is 8 characters')
-    .max(16, 'Max length is 16 characters'),
+    .min(8, 'Мінімальна довжина 8 символів')
+    .max(16, 'Максимальна довжина 16 символів'),
 });
 
 type Schema = z.infer<typeof formSchema>;
@@ -54,7 +52,7 @@ export const NewPasswordForm = () => {
             <FormItem>
               <FormControl>
                 <div className="space-y-2">
-                  <Label htmlFor="current-password">Current password</Label>
+                  <Label htmlFor="current-password">Поточний пароль</Label>
                   <Input id="current-password" type="password" {...field} />
                 </div>
               </FormControl>
@@ -69,16 +67,16 @@ export const NewPasswordForm = () => {
             <FormItem>
               <FormControl>
                 <div className="space-y-2">
-                  <Label htmlFor="new-password">New password</Label>
+                  <Label htmlFor="new-password">Новий пароль</Label>
                   <Input id="new-password" type="password" {...field} />
                 </div>
               </FormControl>
-              <FormDescription>The length should be 8-16 characters</FormDescription>
+              <FormDescription>Довжина 6-18 символів</FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Save changes</Button>
+        <Button type="submit">Зберегти</Button>
       </form>
     </Form>
   );

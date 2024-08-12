@@ -1,5 +1,5 @@
 {
-  "paint-styles": [
+  "painting-styles": [
     {
       "id": "1",
       "name": "Realism",
@@ -494,6 +494,303 @@
       "isReadByReceiver": false,
       "createdAt": "2024-08-01T16:00:00Z",
       "updatedAt": "2024-08-01T16:00:00Z"
+    }
+  ],
+  "pictures": [
+    {
+      "id": "1111",
+      "name": "Sunset Over the Ocean",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 150,
+      "creator": {
+        "id": "creator1",
+        "name": "Alice Johnson",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": true,
+      "description": "A beautiful sunset view over the ocean.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      },
+      "discount": 10,
+      "likes": 42,
+      "styles": [
+        {
+          "id": "style1",
+          "name": "Impressionism",
+          "description": "A style characterized by short, thick strokes of paint."
+        },
+        {
+          "id": "style2",
+          "name": "Modern",
+          "description": "A contemporary style with abstract elements."
+        }
+      ],
+      "totalPurchase": 30,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-02-01T12:00:00Z"
+    },
+    {
+      "id": "2222",
+      "name": "Mountain Range",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 200,
+      "creator": {
+        "id": "creator2",
+        "name": "Bob Smith",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": false,
+      "description": "Majestic mountain range with snow-capped peaks.",
+      "dimensions": {
+        "width": 150,
+        "height": 100
+      },
+      "discount": 20,
+      "likes": 75,
+      "styles": [
+        {
+          "id": "style3",
+          "name": "Realism",
+          "description": "A style focused on depicting subjects accurately."
+        }
+      ],
+      "totalPurchase": 15,
+      "createdAt": "2024-03-20T09:00:00Z",
+      "updatedAt": "2024-04-10T14:00:00Z"
+    },
+    {
+      "id": "3443",
+      "name": "Abstract Dreams",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 300,
+      "creator": {
+        "id": "creator3",
+        "name": "Catherine Lee",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": true,
+      "description": "An abstract painting with vivid colors and shapes.",
+      "dimensions": {
+        "width": 90,
+        "height": 90
+      },
+      "discount": 5,
+      "likes": 63,
+      "styles": [
+        {
+          "id": "style4",
+          "name": "Abstract",
+          "description": "A style that emphasizes shapes and colors over realistic representation."
+        }
+      ],
+      "totalPurchase": 40,
+      "createdAt": "2024-05-25T11:00:00Z",
+      "updatedAt": "2024-06-15T16:00:00Z"
+    },
+    {
+      "id": "4444",
+      "name": "Vintage Paris",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 250,
+      "creator": {
+        "id": "creator4",
+        "name": "David Brown",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": true,
+      "description": "A vintage-style painting of the Paris skyline.",
+      "dimensions": {
+        "width": 110,
+        "height": 70
+      },
+      "discount": 15,
+      "likes": 80,
+      "styles": [
+        {
+          "id": "style5",
+          "name": "Vintage",
+          "description": "A style that evokes a nostalgic feeling of the past."
+        }
+      ],
+      "totalPurchase": 25,
+      "createdAt": "2024-06-10T08:00:00Z",
+      "updatedAt": "2024-07-05T10:00:00Z"
+    },
+    {
+      "id": "5555",
+      "name": "Serene Forest",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 180,
+      "creator": {
+        "id": "creator5",
+        "name": "Emily Davis",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": true,
+      "description": "A calming painting of a dense forest.",
+      "dimensions": {
+        "width": 130,
+        "height": 85
+      },
+      "discount": 12,
+      "likes": 50,
+      "styles": [
+        {
+          "id": "style6",
+          "name": "Nature",
+          "description": "A style that emphasizes natural elements and landscapes."
+        }
+      ],
+      "totalPurchase": 22,
+      "createdAt": "2024-07-20T12:00:00Z",
+      "updatedAt": "2024-08-01T09:00:00Z"
+    },
+    {
+      "id": "6666",
+      "name": "City Lights",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 220,
+      "creator": {
+        "id": "creator6",
+        "name": "Frank Miller",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": false,
+      "description": "A vibrant painting of city lights at night.",
+      "dimensions": {
+        "width": 140,
+        "height": 90
+      },
+      "discount": 18,
+      "likes": 67,
+      "styles": [
+        {
+          "id": "style2",
+          "name": "Modern",
+          "description": "A contemporary style with abstract elements."
+        }
+      ],
+      "totalPurchase": 18,
+      "createdAt": "2024-08-10T14:00:00Z",
+      "updatedAt": "2024-09-01T13:00:00Z"
+    },
+    {
+      "id": "7777",
+      "name": "Quiet Beach",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 170,
+      "creator": {
+        "id": "creator7",
+        "name": "Grace Wilson",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": true,
+      "description": "A serene painting of a quiet beach at sunrise.",
+      "dimensions": {
+        "width": 120,
+        "height": 80
+      },
+      "discount": 8,
+      "likes": 45,
+      "styles": [
+        {
+          "id": "style1",
+          "name": "Impressionism",
+          "description": "A style characterized by short, thick strokes of paint."
+        }
+      ],
+      "totalPurchase": 29,
+      "createdAt": "2024-09-05T15:00:00Z",
+      "updatedAt": "2024-09-25T12:00:00Z"
+    },
+    {
+      "id": "8888",
+      "name": "Rustic Barn",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 190,
+      "creator": {
+        "id": "creator8",
+        "name": "Henry Clark",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": true,
+      "description": "A rustic painting of an old barn in the countryside.",
+      "dimensions": {
+        "width": 100,
+        "height": 100
+      },
+      "discount": 10,
+      "likes": 54,
+      "styles": [
+        {
+          "id": "style7",
+          "name": "Rustic",
+          "description": "A style that reflects a rural and traditional feel."
+        }
+      ],
+      "totalPurchase": 20,
+      "createdAt": "2024-10-01T11:00:00Z",
+      "updatedAt": "2024-10-15T10:00:00Z"
+    },
+    {
+      "id": "9999",
+      "name": "Golden Gate",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 300,
+      "creator": {
+        "id": "creator9",
+        "name": "Ivy Lee",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": false,
+      "description": "A stunning painting of the Golden Gate Bridge.",
+      "dimensions": {
+        "width": 140,
+        "height": 90
+      },
+      "discount": 25,
+      "likes": 90,
+      "styles": [
+        {
+          "id": "style3",
+          "name": "Realism",
+          "description": "A style focused on depicting subjects accurately."
+        }
+      ],
+      "totalPurchase": 12,
+      "createdAt": "2024-11-10T16:00:00Z",
+      "updatedAt": "2024-12-01T15:00:00Z"
+    },
+    {
+      "id": "1008",
+      "name": "Winter Wonderland",
+      "image": "https://img.freepik.com/free-photo/fantasy-mushroom-landscape_23-2151719321.jpg?t=st=1722952126~exp=1722955726~hmac=f6e0d3e326fb09a92ccc84490c502c27643ad88299e1ab2e72d099c815557247&w=1380",
+      "price": 230,
+      "creator": {
+        "id": "creator10",
+        "name": "John Doe",
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?t=st=1722951936~exp=1722955536~hmac=0e319a009b7ead1728f2cb431bcd09d983c83624eb0d385d1eef339bea6ded2a&w=826"
+      },
+      "inStock": true,
+      "description": "A magical painting of a snowy winter scene.",
+      "dimensions": {
+        "width": 110,
+        "height": 75
+      },
+      "discount": 15,
+      "likes": 78,
+      "styles": [
+        {
+          "id": "style6",
+          "name": "Nature",
+          "description": "A style that emphasizes natural elements and landscapes."
+        }
+      ],
+      "totalPurchase": 28,
+      "createdAt": "2024-12-05T09:00:00Z",
+      "updatedAt": "2024-12-20T08:00:00Z"
     }
   ]  
 }

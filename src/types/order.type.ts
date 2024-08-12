@@ -4,16 +4,14 @@ export enum OrderStatusEnum {
   Preparing = 'Preparing',
   OutForDelivery = 'Out for delivery',
   Delivered = 'Delivered',
+  Canceled = 'Canceled',
 }
 
 export interface IOrder {
   id: string;
-  sender: string; // sender_id (user_id)
-  receiver: string; // receiver_id (user_id)
+  sender: string;
+  receiver: string;
   status: OrderStatusEnum;
-
-  // shoppingCart: string;
-
-  createdAt?: Date; // created_at
-  updatedAt?: Date; // updated_at
+  createdAt: string;
+  updatedAt: string;
 }

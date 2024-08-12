@@ -11,15 +11,15 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { AppearanceTab } from '@/components/settings/appearance/appearance-tab';
 
 export const metadata: Metadata = {
-  title: 'Settings',
+  title: 'Налаштування',
 };
 
 export default function Page() {
   return (
     <CenteredContainer>
       <div className="space-y-1">
-        <Title size="h2">Settings</Title>
-        <Paragraph>Manage your account setting</Paragraph>
+        <Title size="h2">Налаштування</Title>
+        <Paragraph>Керуйте своїми налаштуваннями</Paragraph>
       </div>
       <Separator />
       <Tabs defaultValue="personal" className="flex gap-10">
@@ -30,19 +30,19 @@ export default function Page() {
             className="flex justify-start gap-2 w-full hover:bg-accent data-[state=active]:bg-accent cursor-pointer focus:bg-accent focus:text-accent-foreground"
             value="personal">
             <UserCog size={18} />
-            <span>Personal</span>
+            <span>Особисті дані</span>
           </TabsTrigger>
           <TabsTrigger
             className="flex justify-start gap-2 w-full hover:bg-accent data-[state=active]:bg-accent cursor-pointer focus:bg-accent focus:text-accent-foreground"
             value="appearance">
             <Paintbrush size={18} />
-            <span>Appearance</span>
+            <span>Зовнішній вигляд</span>
           </TabsTrigger>
           <TabsTrigger
             className="flex justify-start gap-2 w-full hover:bg-accent data-[state=active]:bg-muted/60 cursor-pointer focus:bg-accent focus:text-accent-foreground"
             value="password">
             <KeyRound size={18} />
-            <span>Password</span>
+            <span>Пароль</span>
           </TabsTrigger>
         </TabsList>
         <TabsContent value="personal" className="mt-0 space-y-5">

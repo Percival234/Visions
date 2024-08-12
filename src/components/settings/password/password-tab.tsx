@@ -6,8 +6,8 @@ export const PasswordTab = () => {
   return (
     <>
       <div>
-        <Title size="h3">Password</Title>
-        <Paragraph>Change your password here. After saving, you&rsquo;ll be logged out.</Paragraph>
+        <Title size="h3">Зміна парою</Title>
+        <Paragraph>Змініть свій пароль тут. Після зміни збережіть, ви вийдете з системи.</Paragraph>
       </div>
       <NewPasswordForm />
     </>

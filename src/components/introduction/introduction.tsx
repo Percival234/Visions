@@ -5,9 +5,11 @@ import { ArrowDown, Store } from 'lucide-react';
 import { Mark } from '@/components/ui/mark';
 import { Title } from '@/components/ui/title';
 import { Button } from '@/components/ui/button';
+import { Paragraph } from '@/components/ui/paragrah';
 import { CenteredContainer } from '@/components/ui/centered-container';
 
 import { ROUTES } from '@/constants/pages-url.constant';
+import { WEBSITE_NAME } from '@/constants/website-name.constant';
 
 export const Introduction = () => {
   return (
@@ -15,19 +17,20 @@ export const Introduction = () => {
       <CenteredContainer className="items-center">
         <div className="flex flex-col items-center text-center pt-40">
           <Title size="h1" className="mb-6 fadeInUp">
-            Immerse Yourself in the World of Art with Visions
+            Пориньте у світ мистецтва з {WEBSITE_NAME}!
           </Title>
-          <p className="text-muted-foreground text-lg mb-16 delay-200 fadeInUp">
-            The leading marketplace for art lovers! <br /> <Mark color="lime">Discover</Mark>,{' '}
-            <Mark color="yellow">create</Mark> and <Mark color="red">buy</Mark> amazing paintings!
-          </p>
+          <Paragraph className="text-lg mb-16 delay-200 fadeInUp">
+            Найкращий ринок для любителів мистецтва! <br /> <Mark color="lime">Знаходьте</Mark>,{' '}
+            <Mark color="yellow">купуйте</Mark> або <Mark color="red">створюйте</Mark> чудові
+            картини!
+          </Paragraph>
           <div className="space-x-2">
             <Button asChild>
-              <Link href={ROUTES.AUTH.SIGN_UP}>Sign up</Link>
+              <Link href={ROUTES.AUTH.SIGN_UP}>Реєстрація</Link>
             </Button>
             <Button className="gap-2 items-center" asChild variant="outline">
               <Link href={ROUTES.MAIN.STORE}>
-                Store
+                Магазин
                 <Store size={18} />
               </Link>
             </Button>

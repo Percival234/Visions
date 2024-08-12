@@ -8,14 +8,14 @@ import { CenteredContainer } from '@/components/ui/centered-container';
 import { mailService } from '@/services/mail.service';
 
 export const metadata: Metadata = {
-  title: 'Notifications',
+  title: 'Сповіщення',
 };
 
 export default async function Page() {
   const mail = await mailService.getUserMail('111');
   return (
     <CenteredContainer>
-      <Title>Manage your mail</Title>
+      <Title>Керуйте своєю поштою</Title>
       <Separator />
       <MessagesList messages={mail.messages} />
     </CenteredContainer>

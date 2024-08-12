@@ -1,4 +1,4 @@
-export interface IPaintStyle {
+export interface IPaintingStyle {
   id: string;
   name: string;
   description: string;

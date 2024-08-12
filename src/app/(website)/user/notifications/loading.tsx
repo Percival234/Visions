@@ -7,7 +7,7 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 export default function Loading() {
   return (
     <CenteredContainer>
-      <Title>Manage your mail</Title>
+      <Title>Керуйте своєю поштою</Title>
       <Separator />
       <div className="space-y-3">
         {Array.from({ length: 5 }).map((_, i) => (

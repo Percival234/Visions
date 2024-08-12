@@ -20,7 +20,7 @@ export const Header = () => {
           <ThemeMenu />
           <UserNavMenu />
           <Button asChild>
-            <Link href={ROUTES.AUTH.SIGN_IN}>Sign in</Link>
+            <Link href={ROUTES.AUTH.SIGN_IN}>Вхід</Link>
           </Button>
         </div>
       </CenteredContainer>

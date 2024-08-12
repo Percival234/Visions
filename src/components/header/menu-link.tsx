@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-import { IPaintStyle } from '@/types/paint-style.type';
+import { IPaintingStyle } from '@/types/painting-style.type';
 
 import { ROUTES } from '@/constants/pages-url.constant';
 
-interface MenuLinkProps extends Omit<IPaintStyle, 'id'>, React.ComponentProps<typeof Link> {}
+interface MenuLinkProps extends Omit<IPaintingStyle, 'id'>, React.ComponentProps<typeof Link> {}
 
 export const MenuLink = ({ name, description, href, ...props }: MenuLinkProps) => {
   return (

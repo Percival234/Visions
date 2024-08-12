@@ -6,8 +6,8 @@ export const AppearanceTab = () => {
   return (
     <>
       <div>
-        <Title size="h3">Appearance</Title>
-        <Paragraph>Customize your space.</Paragraph>
+        <Title size="h3">Зовнішній вигляд</Title>
+        <Paragraph>Персоналізуйте свій простір.</Paragraph>
       </div>
       <ThemeSettings />
     </>

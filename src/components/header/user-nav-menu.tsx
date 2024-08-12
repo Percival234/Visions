@@ -42,35 +42,35 @@ export const UserNavMenu = () => {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+      <DropdownMenuContent className="w-60">
+        <DropdownMenuLabel>Акаунт</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuLink Icon={User} title="Personal" href={ROUTES.USER.PERSONAL} />
-          <DropdownMenuLink Icon={Package} title="Orders" href={ROUTES.USER.ORDERS} />
-          <DropdownMenuLink Icon={Bell} title="Notifications" href={ROUTES.USER.NOTIFICATIONS} />
-          <DropdownMenuLink Icon={Settings} title="Settings" href={ROUTES.USER.SETTINGS} />
+          <DropdownMenuLink Icon={User} title="Профіль" href={ROUTES.USER.PERSONAL} />
+          <DropdownMenuLink Icon={Package} title="Замовлення" href={ROUTES.USER.ORDERS} />
+          <DropdownMenuLink Icon={Bell} title="Сповіщення" href={ROUTES.USER.NOTIFICATIONS} />
+          <DropdownMenuLink Icon={Settings} title="Налаштування" href={ROUTES.USER.SETTINGS} />
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <UserPen className="mr-2 h-4 w-4" />
-              <span>Admin</span>
+              <span>Пaнель адміністратора</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
                 <DropdownMenuLink
                   Icon={ChartColumn}
-                  title="Dashboard"
+                  title="Головна"
                   href={ROUTES.ADMIN.DASHBOARD}
                 />
-                <DropdownMenuLink Icon={Users} title="Users" href={ROUTES.ADMIN.USERS} />
-                <DropdownMenuLink Icon={Images} title="Pictures" href={ROUTES.ADMIN.PICTURES} />
-                <DropdownMenuLink Icon={Package} title="Orders" href={ROUTES.ADMIN.ORDERS} />
+                <DropdownMenuLink Icon={Users} title="Користувачі" href={ROUTES.ADMIN.USERS} />
+                <DropdownMenuLink Icon={Images} title="Картини" href={ROUTES.ADMIN.PICTURES} />
+                <DropdownMenuLink Icon={Package} title="Замовлення" href={ROUTES.ADMIN.ORDERS} />
                 <DropdownMenuLink
                   Icon={MessageSquareWarning}
-                  title="Reports"
+                  title="Звіти"
                   href={ROUTES.ADMIN.REPORTS}
                 />
               </DropdownMenuSubContent>
@@ -82,35 +82,35 @@ export const UserNavMenu = () => {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <UserCog className="mr-2 h-4 w-4" />
-              <span>Creator</span>
+              <span>Панель продавця</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
                 <DropdownMenuLink
                   Icon={ChartColumn}
-                  title="Dashboard"
+                  title="Головна"
                   href={ROUTES.CREATOR.DASHBOARD}
                 />
-                <DropdownMenuLink Icon={Images} title="Showcase" href={ROUTES.CREATOR.SHOWCASE} />
+                <DropdownMenuLink Icon={Images} title="Вітрина" href={ROUTES.CREATOR.SHOWCASE} />
                 <DropdownMenuLink
                   Icon={ImagePlus}
-                  title="Workshop"
+                  title="Майстерня"
                   href={ROUTES.CREATOR.WORKSHOP}
                 />
-                <DropdownMenuLink Icon={Package} title="Orders" href={ROUTES.CREATOR.ORDERS} />
+                <DropdownMenuLink Icon={Package} title="Замовлення" href={ROUTES.CREATOR.ORDERS} />
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
           </DropdownMenuSub>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuLink Icon={LifeBuoy} title="Support" href={ROUTES.USER.SUPPORT} />
-          <DropdownMenuLink Icon={CircleHelp} title="FAQs" href={ROUTES.MAIN.FAQS} />
+          <DropdownMenuLink Icon={LifeBuoy} title="Підтримка" href={ROUTES.USER.SUPPORT} />
+          <DropdownMenuLink Icon={CircleHelp} title="ЧАПИ" href={ROUTES.MAIN.FAQS} />
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <LogOut className="mr-2 h-4 w-4" />
-          <span>Log out</span>
+          <span>Вихід</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
