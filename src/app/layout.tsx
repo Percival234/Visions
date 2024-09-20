@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Mulish } from 'next/font/google';
 
+import { Toaster } from '@/components/ui/sonner';
+
 import { QueryProvider } from '@/providers/query.provider';
 import { ThemeProvider } from '@/providers/theme.provider';
 
@@ -15,7 +17,7 @@ const mulish = Mulish({
 export const metadata: Metadata = {
   title: {
     default: 'Visions',
-    template: '%s | Visions',
+    template: '%s',
   },
   robots: {
     follow: false,
@@ -33,10 +35,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange>
-            <div className="min-h-full min-w-80 flex flex-col">{children}</div>
+            <div className="min-h-full min-w-80 flex flex-col">
+              {children}
+              <Toaster />
+            </div>
           </ThemeProvider>
         </QueryProvider>
       </body>
     </html>
   );
 }
+
+// TODO коли ти редіректиш сам, воно ше редірекить на сторінці реєстрації

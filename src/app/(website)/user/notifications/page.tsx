@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
-  const mail = await mailService.getUserMail('111');
+  const mail = await mailService.getUserMail();
   return (
     <CenteredContainer>
       <Title>Керуйте своєю поштою</Title>

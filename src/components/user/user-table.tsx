@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState } from 'react';
 import { Ban, User, Trash2, Pencil, MoreHorizontal, ArrowUpDown } from 'lucide-react';
 import {
   ColumnDef,
@@ -55,19 +55,19 @@ import { priceFormatter } from '@/helpers/formatters/price-formatter';
 export const columns: ColumnDef<IUser>[] = [
   {
     id: 'perosnal',
-    header: 'Personal',
+    header: 'Особиста інформація',
     cell: ({ row }) => {
-      const { firstname, lastname, email } = row.original;
+      const { firstName, lastName, email } = row.original;
 
       return (
         <div className="flex gap-3">
           <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
-            <AvatarFallback>{`${firstname[0].toUpperCase()}${lastname[0].toUpperCase()}`}</AvatarFallback>
+            <AvatarFallback>{`${firstName[0].toUpperCase()}${lastName[0].toUpperCase()}`}</AvatarFallback>
           </Avatar>
           <div>
             <div className="font-bold">
-              {firstname} {lastname}
+              {firstName} {lastName}
             </div>
             <div className="text-muted-foreground">{email}</div>
           </div>
@@ -77,15 +77,17 @@ export const columns: ColumnDef<IUser>[] = [
   },
   {
     id: 'phone',
-    header: 'Phone number',
+    header: 'Номер телефону',
     cell: ({ row }) => {
       const { phone } = row.original;
-      return <div className="text-muted-foreground">+38-{phone}</div>;
+      return (
+        <div className="text-muted-foreground">{phone ? `+38-${phone}` : 'Номер відсутній'}</div>
+      );
     },
   },
   {
     accessorKey: 'totalSpent',
-    header: 'Total spent',
+    header: 'Загальні витрати',
     cell: ({ row }) => {
       const { totalSpent } = row.original;
       const formatted = priceFormatter(totalSpent);
@@ -94,7 +96,7 @@ export const columns: ColumnDef<IUser>[] = [
   },
   {
     accessorKey: 'roles',
-    header: 'Special roles',
+    header: 'Ролі',
     cell: ({ row }) => {
       const { roles } = row.original;
 
@@ -113,7 +115,7 @@ export const columns: ColumnDef<IUser>[] = [
   },
   {
     accessorKey: 'updatedAt',
-    header: 'Last update',
+    header: 'Остання дія',
     cell: ({ row }) => {
       const { updatedAt } = row.original;
       return <div className="text-accent-foreground">{dateFormatter(updatedAt)}</div>;
@@ -158,7 +160,12 @@ export const columns: ColumnDef<IUser>[] = [
 ];
 
 export const UsersDataTable = ({ data }: { data: IUser[] }) => {
-  const [rowSelection, setRowSelection] = React.useState({});
+  const [rowSelection, setRowSelection] = useState({});
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(event.currentTarget.value);
+  };
 
   const table = useReactTable({
     data,
@@ -178,16 +185,22 @@ export const UsersDataTable = ({ data }: { data: IUser[] }) => {
 
   return (
     <>
-      <div className="flex items-center justify-between gap-2 mb-5">
-        <Input placeholder="Find by id, name or email" className="max-w-sm" />
+      <div className="flex items-center justify-between gap-2">
+        <Input
+          placeholder="Шукати за ID, ім'ям або електронною поштою"
+          className="max-w-sm"
+          onChange={handleSearch}
+          value={searchValue}
+          defaultValue={''}
+        />
         <div className="flex items-center gap-3">
           <Button variant="outline">
             <ArrowUpDown className="h-4 w-4" />
-            Sort
+            Сортувати
           </Button>
           <Button>
-            Write
-            <Pencil className="h-4 w-4" />
+            <Pencil size={20} />
+            Написати
           </Button>
         </div>
       </div>
