@@ -16,7 +16,7 @@ export const Introduction = () => {
     <section className="h-[93vh] relative">
       <CenteredContainer className="items-center">
         <div className="flex flex-col items-center text-center pt-40">
-          <Title size="h1" className="mb-6 fadeInUp">
+          <Title size="h1" className="mb-6 fadeInUp uppercase">
             Пориньте у світ мистецтва з {WEBSITE_NAME}!
           </Title>
           <Paragraph className="text-lg mb-16 delay-200 fadeInUp">

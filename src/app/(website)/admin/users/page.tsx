@@ -1,15 +1,14 @@
-import { UsersDataTable } from '@/components/user/user-table';
-import { CenteredContainer } from '@/components/ui/centered-container';
+import { UsersPanel } from '@/components/admin/users/users-panel';
+
+import { IUsersSearchParams } from '@/hooks/useUsersSearchParams';
 
 import { usersService } from '@/services/user.service';
 
-export const revalidate = 5;
+interface IUsersPage {
+  searchParams: IUsersSearchParams;
+}
 
-export default async function Page() {
-  const users = await usersService.getUsers();
-  return (
-    <CenteredContainer>
-      <UsersDataTable data={users} />
-    </CenteredContainer>
-  );
+export default async function Page({ searchParams }: IUsersPage) {
+  const data = await usersService.getUsers(searchParams);
+  return <UsersPanel data={data} />;
 }

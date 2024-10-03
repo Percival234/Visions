@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { cva } from 'class-variance-authority';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/helpers/cn/cn';
 
 export interface TitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
   size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';

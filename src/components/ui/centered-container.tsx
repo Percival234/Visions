@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+import { cn } from '@/helpers/cn/cn';
 
 interface CenteredContainerProps extends React.HTMLAttributes<HTMLDivElement> {}
 

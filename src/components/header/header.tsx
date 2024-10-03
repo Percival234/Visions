@@ -10,7 +10,7 @@ import { ROUTES } from '@/constants/pages-url.constant';
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 h-16 flex justify-center bg-background">
+    <header className="fixed top-0 right-0 left-0 z-50 h-16 flex justify-center">
       <CenteredContainer className="flex-row items-center justify-between">
         <div className="flex items-center gap-10">
           <div className="font-bold text-2xl uppercase">Visions</div>

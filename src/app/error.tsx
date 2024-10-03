@@ -11,8 +11,10 @@ interface ErrorProps {
   reset: () => void;
 }
 
-export default function Error({ error: { stack, message }, reset }: ErrorProps) {
+export default function Error({ error, reset }: ErrorProps) {
   const [isVisible, setIsVisible] = useState(false);
+
+  console.log(error);
 
   return (
     <div className="flex flex-col items-center gap-6 py-20">
@@ -26,10 +28,10 @@ export default function Error({ error: { stack, message }, reset }: ErrorProps) 
       {isVisible && (
         <Card className="w-full max-w-[30rem] overflow-hidden">
           <CardHeader>
-            <CardTitle className="text-xl">{message}</CardTitle>
+            <CardTitle className="text-xl">{error?.response?.data?.message}</CardTitle>
           </CardHeader>
           <CardContent>
-            <CardDescription className="overflow-hidden">{stack}</CardDescription>
+            {/* <CardDescription className="overflow-hidden">{stack}</CardDescription> */}
           </CardContent>
         </Card>
       )}

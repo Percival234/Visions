@@ -3,7 +3,7 @@ import { LucideIcon } from 'lucide-react';
 
 import { DropdownMenuItem } from './dropdown-menu';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/helpers/cn/cn';
 
 interface DropdownMenuLinkProps extends React.ComponentProps<typeof Link> {
   title: string;

@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import { IAxiosError } from '@/types/axios-error.types';
+import { IAxiosError } from '@/types/axios-error.type';
 import { signInFormSchema, SignInFormSchema } from './sign-in-form-schema';
 
 import {

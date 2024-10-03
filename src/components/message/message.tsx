@@ -15,7 +15,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/helpers/cn/cn';
 import { Separator } from '../ui/separator';
 
 export const Message = ({
